@@ -1,0 +1,11 @@
+# Never commit local secrets
+.Renviron
+.env
+*.pem
+*.key
+
+# R project/session files
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
