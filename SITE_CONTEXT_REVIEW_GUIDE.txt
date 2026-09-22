@@ -1,0 +1,37 @@
+SITE CONTEXT REVIEW GUIDE
+=========================
+
+Why the file exists
+-------------------
+The crash dataset contains strong crash-mechanism fields (PBCAT crash type, bicycle location/direction, motor-vehicle type, critical event, avoidance, speeding, etc.), but it does not contain a validated lane-count/divided-roadway field for every case. V21 therefore refuses to guess lane geometry from mapped tags.
+
+File to review
+--------------
+data/site_context_validated.csv
+
+One row is provided for every record in the supplied workbook. Review Google Street View/site imagery and fill roadway_geometry_code with one of:
+
+  2u     = 2-lane undivided
+  4u     = 4-lane undivided
+  4d     = 4-lane divided
+  6d     = 6-lane divided
+  8d     = 8-lane divided
+  ramp1  = 1-lane one-way ramp/connector
+  ramp2  = 2-lane one-way ramp/connector
+  other  = geometry uncertain/other
+
+Set review_status to validated only after visual confirmation.
+
+Optional fields
+---------------
+median_type, shoulder_context, ramp_interchange, bicycle_facility, review_note
+
+App behavior
+------------
+- review_status = validated: app loads roadway_geometry_code automatically.
+- pending/blank: app starts at Not yet confirmed. User may choose the geometry directly in the interface after reviewing Street View.
+- OpenStreetMap lane/one-way tags are displayed only as hints and are never auto-applied to the crash diagram.
+
+Scientific safeguard
+--------------------
+If geometry is unconfirmed, the mechanism diagram draws a neutral roadway panel and explicitly states that lane geometry is not confirmed. It will not invent divided/undivided status or lane count.
