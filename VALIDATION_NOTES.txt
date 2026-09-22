@@ -1,0 +1,10 @@
+V21 static validation
+- Built from the V20 validated-context package.
+- Crash diagram engine now branches by PBCAT crash type / bicycle direction.
+- Overtaking, crossing/yield, opposing/wrong-way, turning, loss-of-control, and unclear/other cases use different geometries.
+- Driver-response pathway changes by case; overtaking uses an adjacent same-direction lane only when available, otherwise the vehicle slows/remains behind.
+- Navigation/route-awareness countermeasures use a separate upstream route-choice scene.
+- Road geometry is drawn only from validated/user-confirmed site context.
+- User-provided simple car style retained as bundled www/car_icon.png.
+- R delimiter counts were checked after stripping quoted strings/comments and are balanced.
+- R runtime is unavailable in the build environment; final Shiny execution must be checked locally.
