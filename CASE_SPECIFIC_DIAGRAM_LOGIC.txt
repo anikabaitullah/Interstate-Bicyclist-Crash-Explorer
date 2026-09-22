@@ -1,0 +1,18 @@
+CASE-SPECIFIC DIAGRAM LOGIC - V21
+
+The crash diagram no longer uses one generic geometry for all records.
+
+BEFORE panel:
+- Motorist Overtaking: vehicle approaches bicyclist from behind.
+- Initial Crossing Paths / Failed-to-Yield: bicycle path crosses the traffic stream.
+- Wrong-Way / Facing Traffic: opposing paths are shown.
+- Motorist Turning Error / Bicyclist Turned: curved convergence is shown.
+- Bicyclist Loss of Control: unstable bicycle trajectory is shown.
+- Others / unclear: recorded exposure only; no invented impact trajectory.
+
+AFTER panel:
+- Driver expectancy/response: the response depends on the crash type. On multilane same-direction carriageways, an overtaking case can show an adjacent-lane response without crossing a median or centerline. On single same-direction lanes, the vehicle slows and remains behind.
+- Navigation/route awareness: the scene changes to an upstream route-choice diagram before freeway entry.
+- Enforcement: the scene shows a lower-risk pre-conflict operating state.
+
+Roadway geometry is taken only from validated/user-confirmed site context. If geometry is not confirmed, the app does not invent lane count or divided status.
