@@ -1,0 +1,19 @@
+V26 policy update - six countermeasures
+
+The app now uses all six countermeasures from the revised manuscript:
+1. Bicyclist education and route awareness
+2. Driver expectancy and response training
+3. Navigation and information systems
+4. Targeted enforcement and high-visibility operations
+5. Shoulder rumble strips
+6. Enhanced wrong-way signing at interchange ramp terminals
+
+Cluster linkages from the revised manuscript:
+- P1: Dark C1, Dark C2, Daylight C1, Daylight C2
+- P2: Dark C1, Dark C2, Dark C3, Daylight C1, Daylight C2, Daylight C3
+- P3: Dark C2, Dark C4, Daylight C1, Daylight C2
+- P4: Dark C3, Daylight C4
+- P5: Dark C1, Dark C4, Daylight C1
+- P6: Dark C3, Daylight C2
+
+The app still displays one selected countermeasure for each selected crash. Selection is constrained by the cluster linkage first, then refined using crash-record and confirmed site-review evidence.
