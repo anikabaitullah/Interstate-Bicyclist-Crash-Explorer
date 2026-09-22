@@ -1,0 +1,11 @@
+V23 layout changes
+------------------
+1. Keeps the selected-crash CCA membership visualization at the top unchanged.
+2. Removes the separate evidence-summary and merged-mechanism sections that duplicated the recommendation.
+3. Countermeasure section uses a two-column layout:
+   LEFT: compact Google Street View preview.
+   RIGHT: one case-to-countermeasure flowchart.
+4. Flowchart: Crash record + Study CCA + validated SHAP + site review -> intervention point -> selected countermeasure -> expected safety pathway.
+5. Keeps the detailed countermeasure card below the two-column row.
+6. Removes the in-text citation line; keeps the full study reference.
+7. Removes the repeated safety-path chips from the detailed card because the flowchart already displays that pathway.
